@@ -1,0 +1,130 @@
+.logo{
+    height: 100px;
+    background-color: rgba(0, 17, 128, 0.422);
+    display: flex;
+}
+.logo img{
+    margin-left: 130px;
+    height: 100px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 70%;
+    margin-left: 5%;
+    font-size: 22px;
+}
+.navbar i:hover{
+    color: rgb(83,146,249);
+}
+.navbar a{
+    background-color:rgba(142, 179, 224, 0.447);
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: rgb(1, 1, 1);
+    text-decoration: none;
+}
+.navbar a:hover{
+    background-color: rgb(83,146,249);
+    color: white;
+}
+
+.listings {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card1-content {
+    padding: 15px;
+  }
+  
+  .card1-content h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .card1-content p {
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .card1-content .price {
+    font-weight: bold;
+    color: #ff385c;
+  }
+  
+  .card1-content .rating {
+    color: #f39c12;
+  }
+
+
+  @media (max-width: 488px) {
+    .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo img {
+        margin-left: 0;
+        width: 40%; 
+        height: auto;
+    }
+
+    .navbar {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .navbar a {
+        padding: 10px 15px;
+        font-size: 18px;
+    }
+
+    .listings {
+        grid-template-columns: 1fr; 
+        padding: 10px;
+    }
+
+    .card img {
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .card1-content h3 {
+        font-size: 18px;
+    }
+
+    .card1-content p {
+        font-size: 14px;
+    }
+
+    .card1-content .price {
+        font-size: 16px;
+    }
+
+    .card1-content .rating {
+        font-size: 14px;
+    }
+}
